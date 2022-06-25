@@ -1,0 +1,26 @@
+#Author: your.Karthikbalaji@your.domain.com
+
+
+Feature: TV Purchase
+ 
+  Background:
+    Given User launch Flipkart application 
+    And User should login Flipkart with valid Credentials
+ 
+  
+    
+    Scenario Outline:
+    When User Seacrh the Tv brand and Choose Tv Model"<Phone>"
+    And User Should Add the Selected TV To addToCart and Make a Payment
+    Then User Should Receive and Valided The Confermation Message
+    
+    Examples:
+    |Phone|
+    |Realme tv|
+    |OnePluse TV|
+    |Samsung TV|
+    
+    
+    
+
+ 

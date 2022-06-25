@@ -1,0 +1,14 @@
+#Author: your.Karthikbalaji@your.domain.com
+
+
+Feature: TV Purchase
+ 
+  Background:
+    Given User launch Flipkart application 
+    And User should login Flipkart with valid Credentials
+    
+    Scenario: Mobile
+    
+    When User Seacrh the Mobile brand and Choose Mobile Model
+    And User Should Add the Selected Mobile To addToCart and Make a Payment
+    Then User Should Receive and Valided The Confermation Message for mobile

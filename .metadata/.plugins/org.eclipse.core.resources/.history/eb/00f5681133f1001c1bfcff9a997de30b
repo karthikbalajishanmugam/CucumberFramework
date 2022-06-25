@@ -1,0 +1,24 @@
+#Author: your.Karthikbalaji@your.domain.com
+
+
+Feature: TV Purchase
+  I want to use this template for my feature file
+
+ 
+  Scenario: TV
+    Given User launch Flipkart application 
+    And User should login Flipkart with valid Credentials
+    When User Seacrh the Tv brand and Choose Tv Model
+    And User Should Add the Selected TV To addToCart and Make a Payment
+    Then User Should Receive and Valided The Confermation Message
+    
+    Scenario: TV using list
+    Given User launch Flipkart application 
+    And User should login Flipkart with valid Credentials
+    When User Seacrh the Tv brand and Choose Tv Modeln using list
+    |Realme tv|OnePluse TV|Samsung TV|
+    And User Should Add the Selected TV To addToCart and Make a Payment
+    Then User Should Receive and Valided The Confermation Message
+   
+
+ 
